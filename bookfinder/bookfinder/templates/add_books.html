@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="main-section admin">
+	<form method="POST" action="/admin" class="addbookform">
+		<h1>Add Books</h1>
+		<input type="text" name="title" placeholder="Title . . . "><br/>
+		<input type="text" name="writer" placeholder="Writer(Optional)"><br/>
+		<input type="text" name="subject" placeholder="Subject(Optional)"><br/>
+		<input type="text" name="edition" placeholder="Edition (Optional)"><br/>
+		<input type="submit" value="Add Book">
+	</form>
+</div>
+{% endblock content %}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LookBook</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+	<!-- <meta http-equiv="refresh" content="3"> -->
+</head>
+<body>
+	<header>
+		<h1>Look<span>Book</span></h1>
+	</header>
+	<ul class="nav">
+		<li class="active"><a href="/home">Home</a></li>
+		<li><a href="/about">About</a></li>
+		<li><a href="#">Browse</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+	<div class="container">
+		{% block content %}{% endblock %}
+	</div>
+	<footer>Made with ❤️ by <a href="twitter.com/bugswriter">@BugsWriter</a></footer>
+</body>
+</html>

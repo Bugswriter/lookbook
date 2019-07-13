@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="main-section homepage">
+	<div class="homepage-content-wrapper">
+		<img src={{ url_for('static', filename="images/logo2.jpg") }} alt="GNU Logo">
+		
+		<form class="search-form" action="/search" method="GET" id="must-field">
+			<input type="text" placeholder="Enter book ..." name="query">
+	  		<button type="submit" onclick="return empty()">&nbsp<i class="fa fa-search"></i>&nbsp</button>
+		</form>
+
+		<p>The search engine for all book in SRMS Library. <a href="#">Follow us for more content!</a></p>
+	</div>
+</div>
+{% endblock content %}

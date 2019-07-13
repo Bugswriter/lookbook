@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Fira+Mono|Fira+Sans&display=swap');
+
+/************************
+*
+* WHOLE WEBSITE
+* LAYOUT CSS
+* WRITTEN BY BUGSWRITER
+*
+************************/
+
+
+/* HTML , BODY & Some LAYOUT CSS */
+
+/*
+html {
+  height: 100%;
+  background: url(images/) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+*/
+
+
+body{
+	color: black;
+	min-height: 100vh;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 62.9%;
+	font-family: 'Fira Sans', sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+body *{
+	margin: 0;
+	padding: 0;
+}
+
+
+body a{
+	text-decoration: none;
+	color: #E8175D;
+}
+
+body a:hover{
+	text-decoration: underline;
+}
+
+/* HEADER CSS */
+
+header{
+	padding: 15px;
+	display: flex;
+}
+
+header h1{
+	margin: auto;
+	font-size: 3em;
+}
+
+header h1 span{
+	color: white;
+	background-color: #E8175D;
+	border-radius: 6px 1px;
+	font-family: 'Dancing Script', cursive;
+	padding: 3px;
+}
+
+/* NAV BAR CSS */
+
+.nav{
+	border: 1px solid white;
+	font-size: 2.2em;
+	list-style: none;
+	background-color: #474747;
+	display: flex;
+	justify-content: center;
+	border: 1px solid black;
+}
+
+.nav a{
+	color: white;
+}
+
+.nav a:hover{
+	background-color: #E8175D;
+	border-radius: 6px 1px;
+}
+
+.nav .active{
+	background-color: #CC527A;
+}
+
+.nav li{
+	padding: 4px;
+	margin-right: 40px; 
+}
+
+/* CONTAINER & MAIN SECTION (HALF) CSS */
+
+.container{
+	font-size: 1.6em;
+	flex: 1;
+	display: flex;
+}
+
+.main-section{
+	flex: 1;
+	display: flex;
+}
+
+
+
+/* FOOTER CSS */
+
+footer{
+	font-size: 1.7em;
+	padding: 5px;
+	text-align: center;
+}
+
+
+/************************
+*
+* home.html CSS
+* Writter by BugsWriter
+*
+************************/
+
+
+.homepage-content-wrapper{
+	margin: auto;
+	margin-top: 12%;
+	display: flex;
+	flex-direction: column;
+}
+
+.homepage img{
+	margin: auto;
+}
+
+.homepage p{
+	padding: 10px;
+}
+
+form.search-form{
+  -moz-box-shadow:    2px 2px 3px 0px #ccc;
+  -webkit-box-shadow: 2px 2px 3px 0px #ccc;
+  box-shadow:         2px 2px 3px 0px #ccc;
+}
+
+form.search-form input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 500px;
+  
+}
+
+form.search-form button {
+  padding: 10px;
+  background: #CC527A;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.search-form button:hover {
+  background: #E8175D;
+}
+
+form.search-form::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+/************************
+*
+* search_result.html CSS
+* Writter by BugsWriter
+*
+************************/
+
+.searchpage{
+	flex-direction: column;
+}
+
+
+.section-1{
+	flex: 1;
+	display: flex;
+}
+
+.section-2{
+	flex: 6;
+	display: flex;
+	justify-content: center;
+}
+
+
+.search-box{
+	margin: auto;
+}
+
+.result-box table{
+	font-size: 0.8em;
+ 	border-collapse: collapse;
+ 	width: 1000px;
+}
+
+#heading{
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5em;
+  color: black;
+  background-color: white;
+}
+
+.result-box td, th {
+  text-align: center;
+  padding: 10px;
+}
+
+.result-box th{
+	background-color: #474747;
+	color: white;
+}
+
+.result-box tr:nth-child(even){
+  background-color: #CC527A;
+  color: white;
+}
+
+.result-box tr:nth-child(odd){
+	background-color: #efefef;
+}
+
+
+.result-box tr:nth-child(odd) a{
+  background-color: white;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+
+.admin{
+	justify-content: center;
+}
+
+.addbookform{
+	margin-top: 3%;
+}
+.addbookform input{
+	margin: 2px;
+	border-radius: 4px;
+	padding: 3px;
+	font-size: 22px;
+}

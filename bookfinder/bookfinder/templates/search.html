@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="main-section searchpage">
+	<div class="section-1">
+		<div class="search-box">
+			<form class="search-form result-page-search-form" action="/search" method="GET" id="must-field">
+				<input type="text" placeholder="Search another book..." name="query">
+			  	<button type="submit" onclick="return empty()">&nbsp<i class="fa fa-search"></i>&nbsp</button>
+			</form>
+		</div>
+	</div>
+	<div class="section-2">
+		<div class="result-box">
+			<table>
+				<tr>
+					<td colspan="5" id="heading">Showing result for "{{ request.args.get('query') }}"</td>
+				</tr>
+				<tr>
+					<th>Title</th>
+					<th>Writer</th>
+					<th>Subject</th>
+					<th>Edition</th>
+				</tr>
+				{% for result in results %}
+				<tr>
+					<td>{{ result.title }}</td>
+					<td>{{ result.writer }}</td>
+					<td>{{ result.subject }}</td>
+					<td>{{ result.edition }}</td>
+				</tr>
+				{% endfor %}
+			</table> 
+		</div>
+	</div>
+</div>
+{% endblock content %}
